@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1575314019 source:/home/rafael/PROJECTS/parq/ArquivoInvertido/src/Tree.cpp
+	<iostream>
+	"Tree.h"
+
+1575310645 /home/rafael/PROJECTS/parq/ArquivoInvertido/include/Tree.h
+	<vector>
+	<string>
+	"Ocorrencia.h"
+
+1575314550 source:/home/rafael/PROJECTS/parq/ArquivoInvertido/main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Tree.h"
+
+1575314201 /home/rafael/PROJECTS/parq/ArquivoInvertido/include/Ocorrencia.h
+
+1575314169 source:/home/rafael/PROJECTS/parq/ArquivoInvertido/src/Ocorrencia.cpp
+	"Ocorrencia.h"
+	<iostream>
+
