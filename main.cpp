@@ -9,7 +9,7 @@ using namespace std;
 
 
 int doc = 0;
-string arqPrefix = "../arqinv/doc";
+string arqPrefix = "arqinv/doc";
 string arqSuffix = ".txt";
 string arq = "";
 string lendo="";
