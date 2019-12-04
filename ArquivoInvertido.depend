@@ -3,11 +3,11 @@
 	<iostream>
 	"Tree.h"
 
-1575390319 /home/rafael/PROJECTS/parq/ArquivoInvertido/include/Tree.h
+1575480078 /home/rafael/PROJECTS/parq/ArquivoInvertido/include/Tree.h
 	<string>
 	"Trie.h"
 
-1575432196 source:/home/rafael/PROJECTS/parq/ArquivoInvertido/main.cpp
+1575481137 source:/home/rafael/PROJECTS/parq/ArquivoInvertido/main.cpp
 	<iostream>
 	<fstream>
 	<string>

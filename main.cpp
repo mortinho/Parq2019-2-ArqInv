@@ -62,13 +62,13 @@ int main()
                     if (a->ocorrencias) o1 = a->ocorrencias->getOrdenada();
                     else {o1 = NULL;cout<<"Not Found"<<endl;}
                     while (o1){
-                        bolete(o1->getFrequencia()<<","<<o1->getNumArquivo())
+                        cout<<"encontradas "<<o1->getFrequencia()<<" entradas no arquivo doc"<<o1->getNumArquivo()<<".txt"<<endl;
                         o1 = o1->getProximo();
                     }
                 } else cout<<"Not Found"<<endl;
             break;
             case OR:
-                bolete(in1<<" OR "<<in2)
+                cout<<in1<<" OR "<<in2<<endl;
                 a = t->procurar(in1);
                 b = t->procurar(in2);
                 oc = NULL;
@@ -96,16 +96,18 @@ int main()
                         if (oc) oc->getLast()->setProximo(new Ocorrencia(ot));
                         else oc = new Ocorrencia(ot);
                     }
-                    oc = oc->getOrdenada();//leakleakleak
+                    ot = oc;
+                    oc = oc->getOrdenada();
+                    free(ot);
                     ot = oc;
                     while (ot){
-                        bolete(ot->getFrequencia()<<","<<ot->getNumArquivo())
+                        cout<<"encontradas "<<ot->getFrequencia()<<" entradas no arquivo doc"<<ot->getNumArquivo()<<".txt"<<endl;
                         ot=ot->getProximo();
                     }
                 }
             break;
             case AND:
-                bolete(in1<<" and "<<in2)
+                cout<<in1<<" and "<<in2<<endl;
                 a = t->procurar(in1);
                 b = t->procurar(in2);
                 if ((a==NULL)||(b==NULL)) cout<<"Not found"<<endl;
@@ -127,10 +129,13 @@ int main()
                         }
 
                     }
-                    oc = oc->getOrdenada();//leakleakleak
+                    ot = oc;
+                    if (oc) oc = oc->getOrdenada();
+                    else cout<<"nenhuma ocorrencia mutua encontrada"<<endl;
+                    free(ot);
                     ot = oc;
                     while (ot){
-                        bolete(ot->getFrequencia()<<","<<ot->getNumArquivo())
+                        cout<<"encontradas "<<ot->getFrequencia()<<" entradas no arquivo doc"<<ot->getNumArquivo()<<".txt"<<endl;
                         ot=ot->getProximo();
                     }
                 }
