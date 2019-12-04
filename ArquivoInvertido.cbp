@@ -36,9 +36,11 @@
 		</Compiler>
 		<Unit filename="include/Ocorrencia.h" />
 		<Unit filename="include/Tree.h" />
+		<Unit filename="include/Trie.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Ocorrencia.cpp" />
 		<Unit filename="src/Tree.cpp" />
+		<Unit filename="src/Trie.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
